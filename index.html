@@ -27,29 +27,31 @@
         </div>
         <div class="outbut">
             <div class="searchBlock">
-                <input type="text" id="search" placeholder="search">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
                 <div class="btnSearch">
-                    <button id="searchtite">Search By title</button>
-                    <button id="searchcategory">Search By Category</button>
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
                 </div>
             </div>
             <div id="deleteAll"></div>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Price</th>
-                    <th>Taxes</th>
-                    <th>Ads</th>
-                    <th>Discount</th>
-                    <th>Total</th>
-                    <th>Category</th>
-                    <th>Update</th>
-                    <th>Delete</th>
-                </tr>
-                <tbody id="tbody">
-                </tbody>
-            </table>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <script src="js/index.js"></script>
